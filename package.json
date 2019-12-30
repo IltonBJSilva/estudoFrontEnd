@@ -1,0 +1,19 @@
+{
+  "name": "tela-login-escola",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IltonBJSilva/tela-login-escola.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IltonBJSilva/tela-login-escola/issues"
+  },
+  "homepage": "https://github.com/IltonBJSilva/tela-login-escola#readme"
+}
