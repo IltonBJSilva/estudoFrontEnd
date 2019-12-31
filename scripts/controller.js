@@ -12,26 +12,28 @@ app.controller('controller', function ($scope, $location, $http, $timeout, $inte
                     ];
 
 
+
     $scope.nomes = [
-        'Ivanilde',
-        'Jotaro',
-        'Carlos',
-        'Vanessa',
-        'John'
-    ];
+        { name: 'Ivanilde', country: 'Norway', sobrenome: 'Pereira', email: 'Ivanilde@gmail.com'},
+        { name: 'Jotaro', country: 'Sweden', sobrenome: 'Bright', email: 'Jotaro@gmail.com'},
+        { name: 'Vanessa', country: 'England', sobrenome: 'Marcela', email: 'Vanessa@gmail.com'},
+        { name: 'John', country: 'Norway', sobrenome: 'Wick', email: 'John@gmail.com'},
+        { name: 'Joe', country: 'Denmark', sobrenome: 'Newgate', email: 'Joe@gmail.com'},
+        { name: 'Gustav', country: 'Sweden', sobrenome: 'Lic', email: 'Gustav@gmail.com'},
+        { name: 'Birgit', country: 'Denmark', sobrenome: 'Vern', email: 'Birgit@gmail.com'},
+        { name: 'Mary', country: 'England', sobrenome: 'Jacob', email: 'Mary@gmail.com'},
+        { name: 'Kai', country: 'Norway', sobrenome: 'Tai', email: 'Kai@gmail.com' },
 
-    $scope.idades = [
-        '20',
-        '30',
-        '40',
-        '50'
-    ];
 
-    $scope.emails = [
-        'Ivanilde@gmail.com',
-        'Jotaro@gmail.com',
-        'Carlos@gmail.com',
-        'Vanessa@gmail.com'
+        { name: 'Luis', country: 'Bahia', sobrenome: 'Paulo', email: 'Luis@gmail.com' },
+        { name: 'Haki', country: 'Ultima ilha', sobrenome: 'Rei', email: 'Haki@gmail.com' },
+        { name: 'Theodoro', country: 'Montanha Celeste', sobrenome: 'Elias', email: 'Elian@gmail.com' },
+        { name: 'Elian', country: 'São José do rio preto', sobrenome: 'Morais', email: 'Elian@gmail.com' },
+        { name: 'Ilton', country: 'Sante Helena de Goias', sobrenome: 'Batista', email: 'Ilton@gmail.com' },
+        { name: 'Joao', country: 'Rio de Janeiro', sobrenome: 'Victor', email: 'Joao@gmail.com' },
+        { name: 'Fabio', country: 'Araguari', sobrenome: 'Peres', email: 'Fabio@gmail.com' },
+        { name: 'Francisco', country: 'Porto de galinhas', sobrenome: 'Lopes', email: 'Francisco@gmail.com' },
+
     ];
     
 
