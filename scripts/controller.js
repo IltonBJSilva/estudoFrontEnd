@@ -35,8 +35,18 @@ app.controller('controller', function ($scope, $location, $http, $timeout, $inte
         { name: 'Francisco', country: 'Porto de galinhas', sobrenome: 'Lopes', email: 'Francisco@gmail.com' },
 
     ];
-    
 
+    $scope.myVar;
+  
+    $scope.alertSucess = function () {
+        
+        document.getElementById("sucesso").style.visibility = "visible"
+    };
+
+    $scope.TimeAlertSucess = function () {
+
+        $scope.myVar = setInterval(alertSucess, 3000);
+    };
 
     $scope.mensagem = "Opa iae pessoal";
     $timeout(function () {

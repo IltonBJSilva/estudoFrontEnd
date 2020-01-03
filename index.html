@@ -11,6 +11,8 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+      <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
       
       <script src="scripts/libs/angular.js"></script>
       <script src="scripts/app.js"></script>
@@ -24,72 +26,235 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Custom fonts for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        
+        <!-- Custom styles for this template -->
+        <link href="css/resume.min.css" rel="stylesheet">
+
+      
     </head>
     <!--NAVEGADOR-->
-    <body class="container" ng-controller="controller">
-      <nav class="navbar navbar-expand-sm bg-dark fixed-top navbar-dark">
-        <!-- Brand -->
-        <a class="navbar-brand" href="divColor">Kougatia</a>
-        <!-- Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
-          </li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Mais
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Tabela de clientes</a>
-              <a class="dropdown-item" href="#">Contato</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <br>
+    <body class="container" ng-controller="controller" id="corpo">
+      <div class="container-fluid p-0">
+        
+        <nav class="navbar navbar-expand-sm bg-dark fixed-top navbar-dark">
+          <!-- Brand -->
+          <a class="navbar-brand" href="divColor">Kougatia</a>
 
-      <!--TABELA CLIENTE-->
-      <br><br>
-      <div class="container">
-        <h2>TABELA DE CLIENTES</h2>
-        <p>Tabela para pesquisar os clientes da Kougatia:</p>  
-        <p>Filtro: <input type="text" ng-model="filNome" ng-model="filEmail"></p>    
-        <ul>
-          <table class="table table-dark table-hover">
-          <thead>
-            <tr>
-              <th>Nomes</th>
-              <th>Cidades</th>
-              <th>Sobrenome</th>
-              <th>Email</th>
-            </tr>
-          </thead>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Links -->
+            <ul class="navbar-nav">
 
-          <tbody>
-            <tr ng-repeat="nome in nomes | filter:filNome">
-              <td>{{ nome.name }}</td>
-              <td>{{ nome.country }}</td>
-              <td>{{ nome.sobrenome }}</td>
-              <td>{{ nome.email }}</td>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#">Inicio</a>
+              </li>
 
-            </tr>
-          </tbody>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a>
+              </li>
 
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Mais
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Tabela de clientes</a>
+                  <a class="dropdown-item" href="#">Contato</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <br>
+
+
+        <section class="" id="sobre">
           
-          </table>
-        </ul>
-      </div>
+          <a class="navbar-brand logo" id="logoName" href="divColor"></a>
+          <a class="navbar-brand js-scroll-trigger" href="#corpo">
+          <div class="w-100 card-body text-center" id="CorpoSobre">
 
-        <footer>
+            <span class="d-block d-lg-none">Kougatia</span>
+
+            <span class="d-none d-lg-block">
+              <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/ilton2.jpg" width="100%" height="50%"
+                alt="">
+            </span>
+          </a>
+            <h1 class="mb-0">Ilton
+              <span class="text-primary card-text">Batista</span>
+            </h1>
+            <div class="subheading mb-5">+55 (34) 9 996708213
+              <a href="iltonbatista:iltonbatista2018@email.com">iltonbatista2018@email.com</a>
+            </div>
+            <p class="lead mb-5 card-text">
+              Eu sei desenvolver um sistema fullstack usando tecnologia Java-web.
+              <br>
+              Tenho habiliades em criação de copy sendo um Copywriter.
+              <br>
+              Sou um youtuber dono do canal
+              <a href="https://www.youtube.com/user/MineDutyPlayer123" target="_blank">
+                Guleskate
+              </a>
+              e do canal
+              <a href="https://www.youtube.com/user/MusicRapTributoOtaku  " target="_blank">
+                Kougatia
+              </a>
+              <br>
+              sendo um de vlog mais de entretenimento e outro de negócios
+              respectivamente e dono também do website
+              <a href="https://iltonbatista2018.wixsite.com/kougatia" target="_blank">
+                Kougatia</a>.
+                </p>
+          </div>
+                <div class="container">
+                  <h2>Saiba mais sobre mim</h2>
+                  <p>Veja um pouco do que eu ja fiz</p>
+                
+                  <!-- Button to Open the Modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Abrir
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                
+                        <!-- Modal principal -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Ilton Batista</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                
+                        <!-- Modal body -->
+                        <div class="container mt-3">
+                          <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#home">Conquistas</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu1">Livros</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu2">Contato</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content">
+                            <div id="home" class="container tab-pane active"><br>
+                              <h3>Rede sociais</h3>
+                              <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/ilton-batista-4373b9b9/" target="_blank">
+                                  <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/IltonBJSilva" target="_blank">
+                                  <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://twitter.com/IltonBJ1" target="_blank">
+                                  <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.facebook.com/ilton.junior.186" target="_blank">
+                                  <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ilton_batista_da_silva/" target="_blank">
+                                  <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCZS0bIL5G_vDmevFIBHd41g?view_as=subscriber" target="_blank">
+                                  <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://iltonbatista2018.wixsite.com/kougatia" target="_blank">
+                                  <i class="fab fa-korvue"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div id="menu1" class="container tab-pane fade"><br>
+                              <h3>Conquistas</h3>
+                              <p>Lorem ipsum</p>
+                            </div>
+                            <div id="menu2" class="container tab-pane fade"><br>
+                              <h3>Livros</h3>
+                              <p>Lorem ipsum</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                
+                
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                        </div>
+                
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+            </p>
+          </div>
+          
+        </section>
+  </div>
+
+
+        <!--TABELA CLIENTE-->
+        <br><br>
+        <div id="corpoDiv">
           <div class="container">
-            <div class="progress">
-              <div class="progress-bar" style="width:90%">90%</div>
+            <h2>TABELA DE CLIENTES</h2>
+            <p>Tabela para pesquisar os clientes da Kougatia:</p>
+            <p>Filtro: <input type="text" ng-model="filNome" ng-model="filEmail"></p>
+
+            <div class="row">
+              <ul>
+                <table class="table table-dark table-hover" id="tabela">
+                <thead>
+                  <div class="col col-lg-2">
+                      <tr>
+                        <th>Nomes</th>
+                        <th>Cidades</th>
+                        <th>Sobrenome</th>
+                        <th>Email</th>
+                      </tr>
+                  </div>
+                </thead>
+
+                <tbody>
+                      <div class="col-6">
+                        <tr ng-repeat="nome in nomes | filter:filNome">
+                          <td>{{ nome.name }}</td>
+                          <td>{{ nome.country }}</td>
+                          <td>{{ nome.sobrenome }}</td>
+                          <td>{{ nome.email }}</td>
+                        </tr>
+                      </div>
+                    </tbody>
+                </table>
+
+              </ul>
+              </div>
             </div>
           </div>
-        </footer>
+
+            <footer>
+              <button class="btn btn-info" ng-click="alertSucess()" id="buttonEnviar">Enviar</button>
+              <div class="alert alert-success" id="sucesso">
+                <strong>Sucesso!</strong> Enviando com total sucesso.
+              </div>
+            </footer>
+
+          </div>
+
+      </div>
     </body>
 </html>
